@@ -22,7 +22,7 @@
   --color-border-potfolio: #eeeeee;
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Raleway", sans-serif;
-  --animetion-time-func: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animetion-time-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --modal-animetion-time-func: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
