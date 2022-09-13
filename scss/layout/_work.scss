@@ -1,0 +1,27 @@
+.work-list {
+    display: flex;
+    gap: var(--distance-between-cards);
+}
+
+.work-list .item {
+    flex-basis: calc((100% - (var(--number-columns-work) - 1) * var(--distance-between-cards)) / var(--number-columns-work));
+    position: relative;
+}
+
+.work-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-description-title {
+    color: var(--color-text-theme-dark);
+    text-transform: uppercase;
+}
