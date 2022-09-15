@@ -43,6 +43,9 @@
         transform: translateY(-50%);
         left: 12px;
         fill: var(--color-nav-and-title);
+        .modal-form__input:focus+& {
+                fill: var(--color-accent);
+            }
     }
     &__coment {
         width: 100%;
@@ -70,36 +73,31 @@
 }
 
 
-.modal-form__input:focus + .modal-form__icon {
-    fill: var(--color-accent);
-}
+
 
 
 
 .modal-form-check{
     &__lable {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include f-aling;
         margin-bottom: 30px;
     }
     &__icon {
         margin-right: 7px;
         fill: var(--color-nav-and-title);
+        .modal-form-check:checked~&{
+            display: none;
+        }
     }
     &__icon-active {
         display: none;
         margin-right: 7px;
+        .modal-form-check:checked~& {
+            display: block;
+        }
     }
     &__link {
         color: var(--color-accent);
-    }
-    &:checked~&__icon-active {
-        display: block;
-    }
-
-    &:checked~&__icon {
-        display: none;
     }
 }
 

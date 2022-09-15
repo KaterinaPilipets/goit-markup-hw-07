@@ -11,11 +11,9 @@
         flex-basis: calc((100% - (var(--number-columns-benefits) - 1) * var(--distance-between-cards)) / var(--number-columns-benefits));
     }
     &__icon  {
-        display: flex;
+        @include f-aling;
         height: 120px;
         background-color: var(--color-bg-secondary);
-        justify-content: center;
-        align-items: center;
         margin-bottom: 30px;
     }
 }

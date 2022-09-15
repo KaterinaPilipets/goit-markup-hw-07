@@ -7,18 +7,13 @@
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: visibility var(--modal-animetion-time-func),
-        opacity var(--modal-animetion-time-func);
+    transition: visibility var(--modal-animetion-time-func), opacity var(--modal-animetion-time-func);
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 
-.backdrop.is-hidden .modal {
-    border-radius: 50%;
-    background-color: var(--color-accent);
-    transform: translate(100%, 100%) scale(2) rotate(720deg);
-}
+

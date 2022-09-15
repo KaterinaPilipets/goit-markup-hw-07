@@ -8,9 +8,7 @@
         position: relative;
     }
     &__description {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include f-aling;
         position: absolute;
         bottom: 0;
         left: 0;

@@ -1,6 +1,5 @@
 .portfolio-filter {
-    display: flex;
-    justify-content: center;
+    @include f-aling;
     column-gap: 8px;
     margin-bottom: 50px;
 }
@@ -39,9 +38,7 @@
         overflow: auto;
         transform: translateY(100%);
         transition: transform var(--animetion-time-func), opacity var(--animetion-time-func);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include f-aling;
         padding: 24px 24px;
         color: var(--color-text-theme-dark);
         background-color: rgba(33, 150, 243, 0.9);
